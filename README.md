@@ -109,9 +109,8 @@ bool IsPublished
 bool IsDeleted
 ```
 
-Items Saved to our DB
-
-We need a way to sign in with our username and password.
+> **Items Saved to our DB**<br>
+> We need a way to sign in with our username and password.
 
 #### LoginModel
 

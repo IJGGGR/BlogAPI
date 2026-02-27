@@ -1,6 +1,16 @@
+using BlogAPI.Services;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddScoped<SBlogItem>();
+builder.Services.AddScoped<SPassword>();
+builder.Services.AddScoped<SUser>();
+
+var connectionString = builder.Configuration.GetConnectionString("MyBlogString2");
+builder.Services.AddDbContext<DataContext>(o => o.UseSqlServer(connectionString));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

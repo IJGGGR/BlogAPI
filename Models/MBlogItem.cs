@@ -7,7 +7,7 @@ namespace BlogAPI.Models
 {
     public class MBlogItem
     {
-        public int BlogId { get; set; }
+        public int Id { get; set; }
         public int UserId { get; set; }
         public string? PublisherName { get; set; }
         public string? Title { get; set; }

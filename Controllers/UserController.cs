@@ -14,8 +14,7 @@ namespace BlogAPI.Controllers
     {
         private readonly SUser _svc = svc;
 
-        // function to add our user type of CreateAccountID call UserToAdd this will return bool once our user is added
-        // add user
+        [HttpPost("AddUser")]
         public bool AddUser(CreateAccountDTO UserToAdd)
         {
             return _svc.AddUser(UserToAdd);

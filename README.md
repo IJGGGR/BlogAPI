@@ -133,6 +133,13 @@ string Salt
 string Hash
 ```
 
+#### UserIdModel
+
+```cs
+int UserID
+string PublisherName
+```
+
 ### Services
 
 #### UserService
